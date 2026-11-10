@@ -1,0 +1,9 @@
+project: savantenvs/asterisk
+target: fuzz_iax2_ies
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_iax2_ies/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_iax2_ies
+    libfuzzer: true
+    timeout: 10

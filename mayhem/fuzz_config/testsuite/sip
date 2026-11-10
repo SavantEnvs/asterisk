@@ -1,0 +1,9 @@
+[trunk]
+type=peer
+host=192.0.2.1
+allow=ulaw,alaw
+context=default
+
+[exten]
+exten => s,1,Answer()
+same => n,Hangup()

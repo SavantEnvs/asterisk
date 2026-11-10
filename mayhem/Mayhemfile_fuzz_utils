@@ -1,0 +1,9 @@
+project: savantenvs/asterisk
+target: fuzz_utils
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_utils/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_utils
+    libfuzzer: true
+    timeout: 10

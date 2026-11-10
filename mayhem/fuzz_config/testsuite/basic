@@ -1,0 +1,8 @@
+[general]
+foo=bar
+baz => qux
+; comment
+[second](!)
+key=val ; trailing
+[third](second)
+other=1
